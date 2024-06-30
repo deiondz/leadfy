@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between items-center h-20">
+    <div className="flex justify-between w-full py-20 items-center h-20">
       <Link href="/">
-        <h1 className="text-xl font-bold">Logo</h1>
+        <img src="/placeholder2.svg" alt="" className="fill-white" />
       </Link>
       <Profile />
     </div>

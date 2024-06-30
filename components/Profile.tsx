@@ -43,7 +43,7 @@ export default function Profile() {
     <div>
       {!data?.id ? (
         <Link href="/auth" className=" animate-fade">
-          <Button variant="outline">SignIn</Button>
+          <Button>Sign In</Button>
         </Link>
       ) : (
         <DropdownMenu>

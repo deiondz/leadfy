@@ -19,17 +19,19 @@ export default function AuthComponent() {
   };
 
   return (
-    <div className="flex items-center justify-center w-full h-[70vh]">
-      <div className=" w-96 rounded-md  p-5 space-y-5 relative bg-slate-900">
-        <div className="flex items-center gap-2">
+    <div className="flex items-center justify-center w-full h-[100vh]">
+      <div className=" w-96 rounded-md  p-5 space-y-5 relative bg-main">
+        <div className="flex items-center text-black gap-2">
           <KeyRound />
-          <h1 className="text-2xl font-bold">Next + Supabase</h1>
+          <h1 className="text-2xl font-bold">Login</h1>
         </div>
-        <p className="text-sm text-gray-300">Register/SignIn Today 👇</p>
+        <p className="text-sm font-semibold text-gray-950">
+          Register/Sign In Today
+        </p>
         <div className="flex flex-col gap-5">
           <Button
             className=" w-full flex items-center gap-2 "
-            variant="outline"
+            variant={"neutral"}
             onClick={() => handleLoginWithOAuth("google")}
           >
             <FcGoogle /> Google
